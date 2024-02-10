@@ -1,9 +1,14 @@
 pipeline {
     agent any
 
-    sshagent(['65.0.139.118']) {
-    // some block
-}
+    environment {
+        // Define environment variables
+        EC2_HOST = '65.0.139.118'
+        EC2_USER = 'ubuntu'
+        // Assuming you've added your SSH private key to Jenkins' credentials store
+        SSH_KEY_ID = '65.0.139.118'
+    }
+
     stages {
         stage('Checkout') {
             steps {
