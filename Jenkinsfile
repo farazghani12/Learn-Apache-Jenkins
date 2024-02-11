@@ -3,9 +3,9 @@ pipeline {
 
     environment {
         // Define environment variables
-        EC2_HOST = '65.0.139.118'
+        EC2_HOST = '52.66.243.132'
         EC2_USER = 'ubuntu'
-        SSH_KEY_ID = '65.0.139.118'
+        SSH_KEY_ID = '52.66.243.132'
     }
 
     stages {
